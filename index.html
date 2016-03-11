@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restforce</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="prism.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+      body {
+        background-color: #EEEEEE;
+        line-height: 2em;
+        font-family: "Helvetica Neue", "Helvetica", sans-serif;
+      }
+
+      .container {
+        margin: 2em auto;
+        padding: 2em;
+        max-width: 900px;
+      }
+
+      h1.title {
+        font-family: "Roboto Slab", serif;
+        font-size: 2.8em;
+        line-height: 1.5em;
+        margin-bottom: 0.25em;
+      }
+
+      section {
+        margin: 3em 0;
+      }
+
+      section h2.section-title {
+        text-transform: uppercase;
+      }
+
+      code.code-block {
+        display: block;
+      }
+
+      code {
+        font-family: "Courier New", monospace;
+        padding: 0.5em;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .text-muted {
+        color: #CCC;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="title">Restforce</h1>
+
+      <img src="https://img.shields.io/gem/dt/restforce.svg" style="display: block; float: left; margin-top: 2px; margin-right: 1em;" />
+      <iframe src="https://ghbtns.com/github-btn.html?user=ejholmes&repo=restforce&type=star" frameborder="0" scrolling="0" width="160px" height="20px"></iframe>
+
+      <p><a href="https://github.com/ejholmes/restforce">Restforce</a> is the most popular Ruby gem for interacting with Salesforce using the Salesforce API, <a href="https://rubygems.org/gems/restforce">downloaded over 2,000,000 times</a>.</p>
+
+      <section id="get-started">
+        <h2 class="section-title">Get started</h2>
+
+        <p>1. Add <code>restforce</code> to your <code>Gemfile</code>, then run <code>bundle install</code> (or install it manually with <code>gem install</code>).</p>
+
+        <pre><code class="code-block language-ruby">gem 'restforce'</code></pre>
+
+        <p>2. Instantiate a <code>Restforce</code> client object with your <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm">API authentication details</a>. You can use your username and password as below, or <a href="https://github.com/ejholmes/restforce#oauth-token-authentication">authenticate with OAuth</a>.</p>
+
+        <pre style="margin: 0;"><code class="code-block language-bash"># Don't commit your authentication details with your code - use environment variables <3
+export SALESFORCE_USERNAME="username"
+export SALESFORCE_PASSWORD="password"
+export SALESFORCE_SECURITY_TOKEN="security token"
+export SALESFORCE_CLIENT_ID="client id"
+export SALESFORCE_CLIENT_SECRET="client secret"</code></pre>
+
+        <pre style="margin: 0;"><code class="code-block language-ruby">client = Restforce.new</code></pre>
+
+        <p>3. Query Salesforce like an absolute pro.</p>
+
+        <pre><code class="code-block language-ruby">my_leads = client.query("SELECT Id, Source FROM Lead where OwnerId = 'INSERT_USER_ID_HERE'")
+# => #&lt;Restforce::Collection &gt;
+</code></pre>
+    </section>
+
+    <section id="learn-more">
+        <h2 class="section-title">Learn more</h2>
+
+        <p>To discover all the great things you can do with Restforce, check out the <a href="https://github.com/ejholmes/restforce/blob/master/README.md">README</a> and the <a href="http://www.rubydoc.info/gems/restforce/frames">full documentation</a>.</p>
+    </section>
+
+    <section id="get-involved">
+      <h2 class="section-title">Get involved</h2>
+
+      <p>We welcome <a href="https://github.com/ejholmes/restforce/tree/master/CHANGELOG.md">contributions</a> and <a href="https://github.com/ejholmes/restforce/issues">bug reports</a> so we can together make Restforce as great as possible 💕</p>
+
+      <p>We'd love to have you involved, whether it's your first open source contribution or your thousandth. To get started, see our <a href="https://github.com/ejholmes/restforce/blob/master/CONTRIBUTING.MD">CONTRIBUTING.md</a>, and take note of our <a href="https://github.com/ejholmes/restforce/blob/master/CODE_OF_CONDUCT.md">code of conduct</a>.
+
+      <p>If you have any questions, contact <a href="#get-in-touch">Tim Rogers, the maintainer</a>.</p>
+    </section>
+
+    <section id="get-in-touch">
+      <h2 class="section-title">Get in touch</h2>
+
+      <p>Want help using Restforce, with contributing, or have another question?</p>
+
+      <p>Get in touch with <a href="http://timrogers.uk">Tim Rogers</a>, the maintainer of Restforce, at <a href="mailto:me@timrogers.co.uk">me@timrogers.co.uk</a>.</p>
+    </section>
+
+    <p class="text-muted">Restforce is released under the <a href="https://github.com/ejholmes/restforce/blob/master/LICENSE">MIT license</a>.<br />&copy; Eric J. Holmes and Tim Rogers 2016
+  </div>
+
+  <script src="prism.min.js" type="text/javascript"></script>
+  </body>
+</html>
