@@ -95,7 +95,7 @@
 
         <p>1. Add <code>restforce</code> to your <code>Gemfile</code>, then run <code>bundle install</code> (or install it manually with <code>gem install</code>).</p>
 
-        <pre><code class="code-block language-ruby">gem 'restforce', '~> 2.5.0'</code></pre>
+        <pre><code class="code-block language-ruby">gem 'restforce', '~> 2.5.1'</code></pre>
 
         <p>If you're using Ruby 1.9.3, you'll need to install version <code>2.4.2</code> - but we'd strongly recommend upgrading as Ruby 1.9 was deprecated <a href="https://www.ruby-lang.org/en/news/2014/01/10/ruby-1-9-3-will-end-on-2015/">long ago</a>.</p>
 
@@ -128,6 +128,8 @@ export SALESFORCE_API_VERSION="38.0"</code></pre>
         <a href="#stay-up-to-date" class="section-title"><h2>Stay up to date</h2></h2>
 
         <ul class="updates">
+          <li><b>16th March 2017</b>: <a href="https://rubygems.org/gems/restforce/versions/2.5.1">v2.5.1</a> is now available. It adds support for setting custom headers and <code>upsert</code>ing with an ID, and relaxes the gem's dependency on Faraday to allow upgrading it to 1.0. <a href="https://github.com/ejholmes/restforce/blob/master/CHANGELOG.md#251-mar-16-2017">(changelog)</a></li>
+
           <li><b>7th December 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.5.0">v2.5.0</a> has been released. <b>It removes compatability with Ruby 1.9.3</b> and improves the security of the gem's caching behaviour by hashing authentication credentials in cache keys. <a href="https://github.com/ejholmes/restforce/blob/master/CHANGELOG.md#250-dec-5-2016" class="changelog text-muted">(changelog)</a></li>
 
           <li><b>20th October 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.4.2">v2.4.2</a> is now available. It relaxes the gem's dependencies for users of Ruby 2.0.0 onwards to allow wider compatability (e.g. with Rails 4). <a href="https://github.com/ejholmes/restforce/blob/master/CHANGELOG.md#242-oct-20-2016" class="changelog text-muted">(changelog)</a></li>
@@ -164,7 +166,7 @@ export SALESFORCE_API_VERSION="38.0"</code></pre>
       <p>Get in touch with <a href="http://timrogers.uk">Tim Rogers</a>, the maintainer of Restforce, at <a href="mailto:me@timrogers.co.uk">me@timrogers.co.uk</a>.</p>
     </section>
 
-    <p class="text-muted">Restforce is released under the <a href="https://github.com/ejholmes/restforce/blob/master/LICENSE">MIT license</a><br />Page last updated 7th December 2016<br />&copy; <a href="https://github.com/timrogers">Tim Rogers</a> and <a href="https://github.com/ejholmes">Eric J. Holmes</a> 2016
+    <p class="text-muted">Restforce is released under the <a href="https://github.com/ejholmes/restforce/blob/master/LICENSE">MIT license</a><br />Page last updated 16th March 2017<br />&copy; <a href="https://github.com/timrogers">Tim Rogers</a> and <a href="https://github.com/ejholmes">Eric J. Holmes</a> 2017
   </div>
 
   <script src="prism.min.js" type="text/javascript"></script>
