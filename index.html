@@ -87,13 +87,13 @@
         <img src="https://img.shields.io/gem/dt/restforce.svg" style="display: block; float: left; margin-top: 2px; margin-right: 0.4em;" />
       </a>
 
-      <a href="https://circleci.com/gh/restforcegem/restforce">
-        <img src="https://circleci.com/gh/restforcegem/restforce.svg?style=svg" style="display: block; float: left; margin-top: 3px; margin-right: 0.4em;" />
+      <a href="https://circleci.com/gh/restforce/restforce">
+        <img src="https://circleci.com/gh/restforce/restforce.svg?style=svg" style="display: block; float: left; margin-top: 3px; margin-right: 0.4em;" />
       </a>
 
-      <iframe src="https://ghbtns.com/github-btn.html?user=restforcegem&repo=restforce&type=star" frameborder="0" scrolling="0" width="160px" height="20px"></iframe>
+      <iframe src="https://ghbtns.com/github-btn.html?user=restforce&repo=restforce&type=star" frameborder="0" scrolling="0" width="160px" height="20px"></iframe>
 
-      <p><a href="https://github.com/restforcegem/restforce">Restforce</a> is the most popular Ruby gem for interacting with Salesforce using the Salesforce API, <a href="https://rubygems.org/gems/restforce">downloaded over 7,000,000 times</a>.</p>
+      <p><a href="https://github.com/restforce/restforce">Restforce</a> is the most popular Ruby gem for interacting with Salesforce using the Salesforce API, <a href="https://rubygems.org/gems/restforce">downloaded over 7,000,000 times</a>.</p>
 
       <section id="get-started">
         <a href="#get-started" class="section-title"><h2>Get started</h2></a>
@@ -104,7 +104,7 @@
 
         <p>If you're using Ruby 1.9.3, you'll need to install version <code>2.4.2</code> - but we'd strongly recommend upgrading as Ruby 1.9 was deprecated <a href="https://www.ruby-lang.org/en/news/2014/01/10/ruby-1-9-3-will-end-on-2015/">long ago</a>.</p>
 
-        <p>2. Instantiate a <code>Restforce</code> client object with your <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm">API authentication details</a>. You can use your username and password as below, or <a href="https://github.com/restforcegem/restforce#oauth-token-authentication">authenticate with OAuth</a>.</p>
+        <p>2. Instantiate a <code>Restforce</code> client object with your <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm">API authentication details</a>. You can use your username and password as below, or <a href="https://github.com/restforce/restforce#oauth-token-authentication">authenticate with OAuth</a>.</p>
 
         <pre style="margin: 0;"><code class="code-block language-bash"># Don't commit your authentication details with your code - use environment variables <3
 export SALESFORCE_USERNAME="username"
@@ -126,45 +126,47 @@ export SALESFORCE_API_VERSION="38.0"</code></pre>
     <section id="learn-more">
         <a href="#learn-more" class="section-title"><h2>Learn more</h2></a>
 
-        <p>To discover all the great things you can do with Restforce, check out the <a href="https://github.com/restforcegem/restforce/blob/master/README.md">README</a> and the <a href="http://www.rubydoc.info/gems/restforce/frames">full documentation</a>.</p>
+        <p>To discover all the great things you can do with Restforce, check out the <a href="https://github.com/restforce/restforce/blob/master/README.md">README</a> and the <a href="http://www.rubydoc.info/gems/restforce/frames">full documentation</a>.</p>
     </section>
 
     <section id="stay-up-to-date">
         <a href="#stay-up-to-date" class="section-title"><h2>Stay up to date</h2></h2>
 
         <ul class="updates">
+          <li><b>21st August 2017</b>: Restforce has moved (again!), now to <a href="https://github.com/restforce/restforce">restforce/restforce</a>. Thanks to <a href="https://github.com/antwonlee">@antwonlee</a> for letting us have the organisation name!</li>
+
           <li><b>19th August 2017</b>: Restforce has moved to its own organisation on GitHub - the source code and community is now at <a href="https://github.com/restforcegem/restforce">restforcegem/restforce</a>.</li>
 
-          <li><b>25th April 2017</b>: <a href="https://rubygems.org/gems/restforce/versions/2.5.3">v2.5.3</a> is now available. It fixes a bug where <code>upsert</code> and <code>upsert!</code> mutated the provided attributes, starts raising an error where a custom external ID field name is supplied to <code>upsert</code> and <code>upsert!</code> but it is missing from the provided attributes, and uses the client's configured SSL options for authentication requests. <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#253-apr-25-2017">(changelog)</a></li>
+          <li><b>25th April 2017</b>: <a href="https://rubygems.org/gems/restforce/versions/2.5.3">v2.5.3</a> is now available. It fixes a bug where <code>upsert</code> and <code>upsert!</code> mutated the provided attributes, starts raising an error where a custom external ID field name is supplied to <code>upsert</code> and <code>upsert!</code> but it is missing from the provided attributes, and uses the client's configured SSL options for authentication requests. <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#253-apr-25-2017">(changelog)</a></li>
 
-          <li><b>3rd April 2017</b>: <a href="https://rubygems.org/gems/restforce/versions/2.5.2">v2.5.2</a> has been released. It fixes a bug with logging that caused logs related to custom headers (added in v2.5.1) and Gzip to be missing, and improves compatability with versions of <a href="https://github.com/intridea/hashie">Hashie</a> since v3.5.0. <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#252-apr-3-2017">(changelog)</a></li>
+          <li><b>3rd April 2017</b>: <a href="https://rubygems.org/gems/restforce/versions/2.5.2">v2.5.2</a> has been released. It fixes a bug with logging that caused logs related to custom headers (added in v2.5.1) and Gzip to be missing, and improves compatability with versions of <a href="https://github.com/intridea/hashie">Hashie</a> since v3.5.0. <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#252-apr-3-2017">(changelog)</a></li>
 
-          <li><b>16th March 2017</b>: <a href="https://rubygems.org/gems/restforce/versions/2.5.1">v2.5.1</a> is now available. It adds support for setting custom headers and <code>upsert</code>ing with an ID, and relaxes the gem's dependency on Faraday to allow upgrading it to 1.0. <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#251-mar-16-2017">(changelog)</a></li>
+          <li><b>16th March 2017</b>: <a href="https://rubygems.org/gems/restforce/versions/2.5.1">v2.5.1</a> is now available. It adds support for setting custom headers and <code>upsert</code>ing with an ID, and relaxes the gem's dependency on Faraday to allow upgrading it to 1.0. <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#251-mar-16-2017">(changelog)</a></li>
 
-          <li><b>7th December 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.5.0">v2.5.0</a> has been released. <b>It removes compatability with Ruby 1.9.3</b> and improves the security of the gem's caching behaviour by hashing authentication credentials in cache keys. <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#250-dec-5-2016" class="changelog text-muted">(changelog)</a></li>
+          <li><b>7th December 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.5.0">v2.5.0</a> has been released. <b>It removes compatability with Ruby 1.9.3</b> and improves the security of the gem's caching behaviour by hashing authentication credentials in cache keys. <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#250-dec-5-2016" class="changelog text-muted">(changelog)</a></li>
 
-          <li><b>20th October 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.4.2">v2.4.2</a> is now available. It relaxes the gem's dependencies for users of Ruby 2.0.0 onwards to allow wider compatability (e.g. with Rails 4). <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#242-oct-20-2016" class="changelog text-muted">(changelog)</a></li>
+          <li><b>20th October 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.4.2">v2.4.2</a> is now available. It relaxes the gem's dependencies for users of Ruby 2.0.0 onwards to allow wider compatability (e.g. with Rails 4). <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#242-oct-20-2016" class="changelog text-muted">(changelog)</a></li>
 
-          <li><b>18th October 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.4.1">v2.4.1</a> has just been released. It adds compatability with pre-released versions of Ruby 2.4.0. <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#241-oct-18-2016" class="changelog text-muted">(changelog)</a></li>
+          <li><b>18th October 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.4.1">v2.4.1</a> has just been released. It adds compatability with pre-released versions of Ruby 2.4.0. <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#241-oct-18-2016" class="changelog text-muted">(changelog)</a></li>
 
-          <li><b>29th July 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.4.0">v2.4.0</a> is available via RubyGems.org. It supports the Document resource, which behaves just like Attachment. <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#240-jul-29-2016" class="changelog text-muted">(changelog)</a></li>
+          <li><b>29th July 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.4.0">v2.4.0</a> is available via RubyGems.org. It supports the Document resource, which behaves just like Attachment. <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#240-jul-29-2016" class="changelog text-muted">(changelog)</a></li>
 
-          <li><b>15th July 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.3.0">v2.3.0</a> is live on RubyGems.org. It allows you to optionally specify the Salesforce API version with a <code>SALESFORCE_API_VERSION</code> environment variable. <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#230-jul-15-2016" class="changelog text-muted">(changelog)</a></li>
+          <li><b>15th July 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.3.0">v2.3.0</a> is live on RubyGems.org. It allows you to optionally specify the Salesforce API version with a <code>SALESFORCE_API_VERSION</code> environment variable. <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#230-jul-15-2016" class="changelog text-muted">(changelog)</a></li>
 
-          <li><b>6th June 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.2.1">v2.2.1</a> is now available from RubyGems.org. It adds support for a new <code>get_deleted</code> method. <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#221-jun-6-2016" class="changelog text-muted">(changelog)</a></li>
+          <li><b>6th June 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.2.1">v2.2.1</a> is now available from RubyGems.org. It adds support for a new <code>get_deleted</code> method. <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#221-jun-6-2016" class="changelog text-muted">(changelog)</a></li>
 
-          <li><b>16th March 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.2.0">v2.2.0</a> has just been released. It improves the handling of errors returned by the API, notably raising an error when a <code>300</code> is returned due to an external ID matching multiple records for an <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_upsert.htm">upsert</a> operation. <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#220-mar-16-2016" class="changelog text-muted">(changelog)</a></li>
+          <li><b>16th March 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.2.0">v2.2.0</a> has just been released. It improves the handling of errors returned by the API, notably raising an error when a <code>300</code> is returned due to an external ID matching multiple records for an <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_upsert.htm">upsert</a> operation. <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#220-mar-16-2016" class="changelog text-muted">(changelog)</a></li>
 
-          <li><b>9th March 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.1.3">v2.1.3</a> is now available. It returns a new <code>Restforce::ServerError</code> when Salesforce is experiencing problems, and improves the handling of the response body in errors. <a href="https://github.com/restforcegem/restforce/blob/master/CHANGELOG.md#213-mar-9-2016" class="changelog text-muted">(changelog)</a></li>
+          <li><b>9th March 2016</b>: <a href="https://rubygems.org/gems/restforce/versions/2.1.3">v2.1.3</a> is now available. It returns a new <code>Restforce::ServerError</code> when Salesforce is experiencing problems, and improves the handling of the response body in errors. <a href="https://github.com/restforce/restforce/blob/master/CHANGELOG.md#213-mar-9-2016" class="changelog text-muted">(changelog)</a></li>
         </ul>
     </section>
 
     <section id="get-involved">
       <a href="#get-involved" class="section-title"><h2>Get involved</h2></a>
 
-      <p>We welcome <a href="https://github.com/restforcegem/restforce/tree/master/CHANGELOG.md">contributions</a> and <a href="https://github.com/restforcegem/restforce/issues">bug reports</a> so we can together make Restforce as great as possible 💕</p>
+      <p>We welcome <a href="https://github.com/restforce/restforce/tree/master/CHANGELOG.md">contributions</a> and <a href="https://github.com/restforce/restforce/issues">bug reports</a> so we can together make Restforce as great as possible 💕</p>
 
-      <p>We'd love to have you involved, whether it's your first open source contribution or your thousandth. To get started, see our <a href="https://github.com/restforcegem/restforce/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a>, and take note of our <a href="https://github.com/restforcegem/restforce/blob/master/CODE_OF_CONDUCT.md">code of conduct</a>.
+      <p>We'd love to have you involved, whether it's your first open source contribution or your thousandth. To get started, see our <a href="https://github.com/restforce/restforce/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a>, and take note of our <a href="https://github.com/restforce/restforce/blob/master/CODE_OF_CONDUCT.md">code of conduct</a>.
 
       <p>If you have any questions, contact <a href="#get-in-touch">Tim Rogers, the maintainer</a>.</p>
     </section>
@@ -177,7 +179,7 @@ export SALESFORCE_API_VERSION="38.0"</code></pre>
       <p>Get in touch with <a href="http://timrogers.co.uk">Tim Rogers</a>, the maintainer of Restforce, at <a href="mailto:tim@restforce.org">tim@restforce.org</a>.</p>
     </section>
 
-    <p class="text-muted">Restforce is released under the <a href="https://github.com/restforcegem/restforce/blob/master/LICENSE">MIT license</a><br />Page last updated 19th August 2017<br />&copy; <a href="https://github.com/timrogers">Tim Rogers</a> and <a href="https://github.com/ejholmes">Eric J. Holmes</a> 2017
+    <p class="text-muted">Restforce is released under the <a href="https://github.com/restforce/restforce/blob/master/LICENSE">MIT license</a><br />Page last updated 19th August 2017<br />&copy; <a href="https://github.com/timrogers">Tim Rogers</a> and <a href="https://github.com/ejholmes">Eric J. Holmes</a> 2017
   </div>
 
   <script src="prism.min.js" type="text/javascript"></script>
